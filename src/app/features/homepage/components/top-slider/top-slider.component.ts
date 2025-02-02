@@ -11,13 +11,13 @@ import { TranslateModule, TranslateStore } from '@ngx-translate/core';
   styleUrl: './top-slider.component.scss'
 })
 export class TopSliderComponent {
-  visiblePopupId: number | null = null; // Track which popup is visible
+  visiblePopupId: number | null = null; 
 
   // Data for pulsing items
   pulsingItems = [
     {
       id: 1,
-      positionClass: 'top-20 left-5', // Position classes
+      positionClass: 'top-20 left-5', 
       title: '1.2m',
       description: 'Active Citizen & Resident',
       image: '/assets/images/using-icon.svg',
@@ -43,8 +43,8 @@ export class TopSliderComponent {
 
   // Toggle popup visibility
   togglePopup(id: number, event: MouseEvent): void {
-    event.stopPropagation(); // Prevent event bubbling
-    this.visiblePopupId = this.visiblePopupId === id ? null : id; // Toggle popup
+    event.stopPropagation(); 
+    this.visiblePopupId = this.visiblePopupId === id ? null : id; 
   }
 
   // Close all popups on outside click
