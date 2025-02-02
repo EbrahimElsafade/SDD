@@ -1,0 +1,167 @@
+.our-scope {
+  text-align: start;
+  padding: 4rem 3rem;
+  padding-inline-end: 0;
+  @media only screen and (max-width: 992px) {
+    padding: 1rem;
+  }
+
+  .w-50{
+    width: 50%;
+    @media only screen and (max-width: 992px) {
+      width: 100% !important;
+    }
+  }
+
+  h4 {
+    font-size: 1rem;
+    color: $gray;
+  }
+
+  h1 {
+    color: $dark-gray;
+    line-height: 3rem;
+    font-weight: 800;
+  }
+
+  > p {
+    font-size: .9rem;
+    color: $gray;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+  .p-carousel-indicators {
+    display: none;
+  }
+  .p-carousel-content {
+    position: relative;
+    padding-top: 5rem;
+    .p-ripple {
+      position: absolute;
+      top: 0;
+      right: 3rem;
+      z-index: 9;
+      background: rgba(221,223,228, 0.5);
+      border-radius: 50%;
+      @media only screen and (max-width: 992px) {
+        top: 1rem;
+        right: 0;
+        width: 3rem;
+        height: 3rem;
+      }    
+      &:hover{
+        background: rgb(221,223,228);
+      }
+    }
+    .p-carousel-prev {
+      margin-inline-end: 2.5rem;
+      @media only screen and (max-width: 992px) {
+        margin-inline-end: 3.5rem;
+      }
+    }
+    .p-icon {
+      width: .7rem;
+      height: .7rem;
+    }
+  }
+
+  .card-icon {
+    display: flex;
+    justify-content: end;
+    font-size: 8.5rem;
+    line-height: 5rem;
+    margin-top: 2.5rem;
+  }
+
+  .p-carousel {
+    .card-wrapper {
+      display: flex;
+      justify-content: start;
+
+      .scope-card {
+        width: 95%;
+        height: 23rem;
+        text-align: left;
+        border-radius: 1.2rem;
+        border: 1px solid $gray;
+        transition: transform 0.3s ease;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        @media only screen and (max-width: 992px) {
+          width: 100%;
+          height: 25rem;
+        }   
+        &:hover{
+          border-color: $primary-color;
+          .card-number{
+            color: $primary-color !important;
+          }
+          .card-icon{
+            [class^=icon-]{
+              .path2:before{
+                color: $light-green;
+              }
+              .path1:before{
+                color: $primary-color;
+              }
+            }
+          }
+        }
+
+        .p-card {
+            border: 0;
+            box-shadow: none;
+            border-radius: 1.2rem;
+            .p-card-content {
+              padding: 0;
+          }
+        }
+        .card-title {
+          display: flex;
+          align-items: baseline;
+        }
+        .card-content {
+          padding: 0 1rem;
+
+          .icon {
+            font-size: 2rem;
+            color: #007bff;
+            margin-bottom: 1rem;
+          }
+
+
+          h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: $dark-gray;
+            @media only screen and (max-width: 992px) {
+              font-size: 1.5rem;
+            } 
+          }
+
+          p {
+            font-size: 0.9rem;
+            color: $gray;
+            margin: 1rem 0;
+          }
+
+          .card-number {
+            font-size: 1.6rem;
+            font-weight: 300;
+            color: #DDDFE4;
+            
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+.p-carousel-items-content {
+  padding-right: 10rem;
+  @media only screen and (max-width: 992px) {
+    padding-right: 0;
+  }
+}

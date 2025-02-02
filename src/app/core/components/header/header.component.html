@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/images/Logo.png">
+      <span>{{ 'BETA' | translate }}</span>
+    </a>
+    <div class="mobile-flip">
+      <div class="main-menu">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">{{ 'HOME' | translate }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#our-vision">{{ 'VISION' | translate }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#our-scope">{{ 'SCOPE' | translate }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">{{ 'SERVICESANDSOLUTIONS' | translate }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">{{ 'INITIATIVES' | translate }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">{{ 'DOWNLOAD' | translate }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex">
+        <span class="icon-Frame-144163"></span>
+        <button class="btn" (click)="toggleLanguage()">
+          {{ 'LANGUAGE' | translate}}
+
+        </button>
+      </div>
+    </div>
+
+  </div>
+</nav>

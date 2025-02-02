@@ -1,0 +1,31 @@
+// @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+
+@font-face {
+    font-family: 'SharjahGov';
+    src: url('/assets/fonts/SharjahGov/AvenirArabic-SharjahGovt-Hv.woff2') format('woff2'),
+         url('/assets/fonts/SharjahGov/AvenirArabic-SharjahGovt-Hv.woff') format('woff'),
+         url('/assets/fonts/SharjahGov/AvenirArabic-SharjahGovt-Hv.ttf') format('ttf');
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SharjahGov';
+    src: url('/assets/fonts/SharjahGov/AvenirArabic-SharjahGovt-Md.woff2') format('woff2'),
+         url('/assets/fonts/SharjahGov/AvenirArabic-SharjahGovt-Md.woff') format('woff'),
+         url('/assets/fonts/SharjahGov/AvenirArabic-SharjahGovt-Md.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SharjahGov';
+    src: url('/assets/fonts/SharjahGov/AvenirArabic-SharjahGovt-Rg.woff2') format('woff2'),
+         url('/assets/fonts/SharjahGov/AvenirArabic-SharjahGovt-Rg.woff') format('woff'),
+         url('/assets/fonts/SharjahGov/AvenirArabic-SharjahGovt-Rg.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body {
+    font-family: $SharjahGov;
+    font-weight: 400;
+  }

@@ -1,0 +1,138 @@
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <video #carouselVideo playsinline autoplay muted loop class="carousel-video">
+    <source src="/assets/videos/top-slider-v.mp4" type="video/mp4">
+    {{'VIDEONOTSUPPORT' | translate}}
+  </video>
+
+  <div class="ccSection">
+    
+      <div
+        *ngFor="let item of pulsingItems"
+        class="pulsing"
+        [ngClass]="item.positionClass"
+        (click)="stopPropagation($event)"
+      >
+        <!-- Pulsing Circle -->
+        <div class="pulsing-circle" (click)="togglePopup(item.id, $event)">
+          <div class="circle-inside" *ngIf="visiblePopupId === item.id">
+            <span class="icon-arrow-up-right"></span>
+          </div>
+        </div>
+    
+        <!-- Connecting Line -->
+        <div class="line"></div>
+    
+        <!-- Pulsing Popup -->
+        <div class="pulsing-popup" *ngIf="visiblePopupId === item.id">
+          <div class="text-section">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+            <div class="number-using">
+              <div class="using-svg">
+                <img [src]="item.image" />
+              </div>
+              <span [innerHTML]="item.additionalText"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <div class="static-pulsing-popup pulsing">
+      <div class="circle-inside">
+        <span class="icon-arrow-up-right"></span>
+      </div>
+      <div class="pulsing-popup">
+        <div class="text-section">
+          <h3>{{'ACTIVEMUMBER' | translate}}</h3>
+          <p>{{'CITIZEN' | translate}}</p>
+          <div class="number-using">
+            <div class="using-svg">
+              <img src="/assets/images/using-icon.svg" />
+            </div>
+            <span>{{'USAAPP' | translate}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="carousel-indicators">
+
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1">
+        <div class="cc-text">
+          <p>Empower People</p>
+          <span>There are many variations of passages of Lorem Ipsum variations of passages available.</span>
+        </div>
+      </button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+        <div class="cc-text">
+          <p>Digital Transformation</p>
+          <span>There are many variations of passages of Lorem Ipsum variations of passages available.</span>
+        </div>
+      </button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+        <div class="cc-text">
+          <p>Datacenter</p>
+          <span>There are many variations of passages of Lorem Ipsum variations of passages available.</span>
+        </div>
+      </button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4">
+        <div class="cc-text">
+          <p>Active Service Directory</p>
+          <span>There are many variations of passages of Lorem Ipsum variations of passages available.</span>
+        </div>
+      </button>
+    </div>
+
+    <div class="cControls">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="icon-arrow-left" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="icon-arrow-right" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="carousel-caption d-md-block">
+        <h1>{{ 'TOPSLIDERH1' | translate }}</h1>
+        <p>{{ 'TOPSLIDERP1' | translate }}</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="carousel-caption  d-md-block">
+        <h1>{{ 'TOPSLIDERH2' | translate }}</h1>
+        <p>{{ 'TOPSLIDERP1' | translate }}</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="carousel-caption d-md-block">
+        <h1>{{ 'TOPSLIDERH3' | translate }}</h1>
+        <p>{{ 'TOPSLIDERP1' | translate }}</p>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="carousel-item">
+      <div class="carousel-caption d-md-block">
+        <h1>{{ 'TOPSLIDERH4' | translate }}</h1>
+        <p>{{ 'TOPSLIDERP1' | translate }}</p>
+      </div>
+    </div>
+  </div>
+
+
+</div>

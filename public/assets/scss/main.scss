@@ -1,0 +1,29 @@
+// Abstracts Imports
+@import "./abstracts/variables";
+@import "./abstracts/functions";
+
+// Vendors Imports
+@import "./vendors/bootstrap";
+@import "./vendors/primeng";
+@import "./vendors/ngx-owl-carousel";
+@import "./vendors/icomoon";
+
+// Base Imports
+@import "./base/reset";
+@import "./base/typography";
+
+// Layout Imports
+@import "./layout/header";
+@import "./layout/footer";
+
+// Components Imports
+@import "./components/home-side-menu";
+@import "./components/services";
+@import "./components/our-vision";
+@import "./components/cards";
+
+// Pages Imports
+@import "./pages/homepage";
+
+// Themes Imports
+@import "./themes/rtl-theme";

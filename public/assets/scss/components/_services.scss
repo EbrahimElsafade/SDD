@@ -1,0 +1,109 @@
+.services-solutions {
+    padding: 4rem 3rem;
+    text-align: center;
+    @media only screen and (max-width: 992px) {
+        padding: 1rem;
+    }
+    .nav-tabs {
+        .nav-link {
+          cursor: pointer;
+        }
+      }
+    
+      .card {
+        border: 1px solid $gray;
+        border-radius: 1.2rem;
+        transition: transform 0.2s;
+        &:hover {
+          transform: scale(1.05);
+        }
+        .card-body {
+            flex: 1 1 auto;
+            padding: 2rem;
+            color: $gray;
+            @media only screen and (max-width: 992px) {
+                padding:  1rem;
+            }
+            .service-card-title {
+                display: flex;
+                justify-content: space-between;
+                @media only screen and (max-width: 992px) {
+                    flex-direction: column-reverse;
+                    align-items: start;
+                    gap: 1rem;
+                }
+                .card-title {
+                    color: $dark-gray;
+                    font-weight: 800;
+                    font-size: 1.3rem;
+                    @media only screen and (max-width: 992px) {
+                        font-size: 1rem;
+                    }
+                }
+                span[class^=icon-] {
+                    font-size: 1.8rem;
+                }
+            }
+            .card-text:last-child {
+                margin-bottom: 0;
+                margin-inline-end: 2rem;
+                text-align: start;
+                @media only screen and (max-width: 992px) {
+                    display: none;
+                }
+            }
+        }
+      }
+    
+      .text-center {
+        button {
+          padding: 10px 20px;
+          border-radius: 50px;
+        }
+      }
+    h2{
+        color: $dark-gray;
+        line-height: 3rem;
+        font-weight: 800;
+    }
+    p {
+        font-size: .9rem;
+        color: $gray;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+    }
+    .nav-tabs {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0 2rem;
+        border: 0;
+        gap: .6rem;
+        .nav-item {
+            a {
+                background: $base-gray;
+                border-radius: 2rem ;
+                font-size: .8rem;
+                font-weight: 500;
+                border: 0;
+                color: $gray ;
+                &.active, &:hover{
+                    background-color: $primary-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .btn-more {
+        background: $light-gray;
+        font-size: .8rem;
+        margin-top: 2rem;
+        color: $gray;
+        border: 1px solid transparent;
+        &:hover{
+            border-color: $gray;
+        }
+        [class^=icon-] {
+            margin: 0 .2rem;
+        }
+    }
+}

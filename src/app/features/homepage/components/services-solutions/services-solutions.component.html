@@ -1,0 +1,45 @@
+<div class="services-solutions" id="services">
+  <p>{{ 'services.title' | translate }}</p>
+  <h2>{{ 'services.heading' | translate }}</h2>
+  
+    <!-- Bootstrap Tabs -->
+    <ul class="nav nav-tabs">
+      <li
+        class="nav-item"
+        *ngFor="let category of categories"
+        (click)="onTabSelect(category)"
+      >
+        <a
+          class="nav-link"
+          [class.active]="selectedCategory === category"
+          href="javascript:void(0)"
+        >
+          {{ category }}
+        </a>
+      </li>
+    </ul>
+  
+    <!-- Cards -->
+    <div class="row">
+      <div
+        class="col-md-3 col-sm-6 col-6 mt-4"
+        *ngFor="let card of filteredCards | slice: 0:visibleCards"
+      >
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="service-card-title">
+              <h5 class="card-title">{{ card.title }}</h5>
+              <div [innerHTML]="card.icon"></div>
+            </div>
+            <p class="card-text">{{ card.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Show More Button -->
+    <div class="text-center mt-3" *ngIf="showMoreEnabled">
+      <button class="btn btn-more" (click)="showMore()"><span class="icon-plus"></span> {{ 'button.viewMore' | translate }}</button>
+    </div>
+  </div>
+  

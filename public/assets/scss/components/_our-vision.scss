@@ -1,0 +1,143 @@
+.text-video{
+    position: relative;
+    overflow: hidden;
+    height: 36vh;
+    margin-top: 2rem;
+    @media only screen and (max-width: 992px) {
+        height: 22vh;
+    }
+    video {
+        width: 100%;
+        height: 34vh;
+        object-fit: fill;
+        object-position: bottom;
+        @media only screen and (max-width: 992px) {
+            height: 20vh;
+            border: 1px solid $white;
+        }
+    }
+    .text {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        color: #000;
+        overflow: hidden;
+        background: $white;
+        mix-blend-mode: screen;
+        p {
+            font-size: 20vw;
+            font-weight: 700;
+            font-family: system-ui;
+            letter-spacing: -15px;
+            line-height: 15vw;
+            @media only screen and (max-width: 992px) {
+                font-size: 50vw;
+                line-height: 35vw;
+            }
+        }
+    }
+}
+
+.v-mobile-flip {
+    @media only screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.vision-section{
+    margin-bottom: 4rem;
+    @media only screen and (max-width: 992px) {
+        padding: 1rem;
+    }
+    .our-vision{
+        padding-inline-end: 6rem;
+        padding-inline-start: 1rem;
+        @media only screen and (max-width: 992px) {
+            padding: 0;
+        }
+        h5{
+            font-size: 1rem;
+            color: $gray;
+        }
+        h2{
+            color: $dark-gray;
+            line-height: 3rem;
+            font-weight: 800;
+            @media only screen and (max-width: 992px) {
+                line-height: 2rem;
+            }
+        }
+        .vision-description{
+            font-size: .9rem;
+            color: $gray;
+            margin-top: 1.5rem;
+        }
+    }
+    .proud-to-serve{
+        padding-top: 2.3rem;
+        @media only screen and (max-width: 992px) {
+            padding-top: 0;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        h5{
+            font-size: 1.8rem;
+            color: $gray;
+            font-weight: 800;
+        }
+        h3{
+            font-weight: 3.5rem;
+            color: $dark-gray;
+            font-weight: 700;
+            
+        }
+    }
+}
+
+.directors {
+    display: flex;
+    padding-top: 3rem;
+    @media only screen and (max-width: 992px) {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .director-info {
+        display: flex;
+        align-items: end;
+        .director-img {
+            height: 8.4rem;
+            img{
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+        .director-text {
+            margin-inline-start: 1.5rem;
+            position: relative;
+            p {
+                margin-bottom: 0;
+                font-size: .8rem;
+                font-weight: 400;
+                color: $gray;
+                @media only screen and (max-width: 992px) {
+                   max-width: 11rem;
+                }
+            }
+            > p:first-child{
+                font-weight: 800;
+                font-size: 1rem;
+                color: $dark-gray;
+                
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                top: -15px;
+                background: green;
+                height: 2px;
+                width: 60px;
+            }
+        }
+    }
+}

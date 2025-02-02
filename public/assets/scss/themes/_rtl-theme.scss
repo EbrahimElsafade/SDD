@@ -1,0 +1,13 @@
+$right: left;
+$left: right;
+
+.rtl {
+  @import "../vendors/bootstrap-rtl";
+
+  @import "../abstracts/variables-rtl";
+  direction: rtl;
+}
+
+.left{
+  margin-#{$left}: 5px;
+}

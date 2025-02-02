@@ -1,0 +1,14 @@
+<div [ngClass]="lang == 'ar' ? 'rtl' : 'ltr'">
+  <!-- <h1>{{ 'WELCOME' | translate }}</h1>
+  <button (click)="toggleLanguage()">{{ 'LANGUAGE_TOGGLE' | translate }}</button> -->
+
+
+<app-header></app-header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<app-footer></app-footer>
+
+</div>

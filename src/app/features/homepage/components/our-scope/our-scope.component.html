@@ -1,0 +1,42 @@
+<div class="our-scope" id="our-scope">
+    <h4>{{ 'scope.title' | translate }}</h4>
+    <h1>{{ 'scope.heading' | translate }}</h1>
+    <p class="w-50">
+      {{ 'scope.description' | translate }}
+    </p>
+  <div [ngClass]="{ 'rtl-carousel': isRtl }">
+    <p-carousel
+    [value]="cards"
+    [numVisible]="3"
+    [numScroll]="1"
+    [circular]="true"
+    
+    [responsiveOptions]="[
+      { breakpoint: '1024px', numVisible: 3, numScroll: 1 },
+      { breakpoint: '768px', numVisible: 2, numScroll: 1 },
+      { breakpoint: '560px', numVisible: 1, numScroll: 1 }
+    ]"
+  >
+      <ng-template pTemplate="item" let-card>
+        <div class="card-wrapper">
+          <p-card class="scope-card">
+            <div class="card-content">
+              <div class="card-title">
+                <h3>{{ card.title }}</h3>
+                <span class="card-number">{{ card.number }}</span>
+              </div>
+              <p>{{ card.description }}</p>
+              <div class="card-icon">
+                <div [innerHTML]="card.icon"></div>
+              </div>
+              
+              
+            </div>
+          </p-card>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+
+  </div>
+  

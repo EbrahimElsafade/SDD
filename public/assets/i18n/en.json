@@ -1,0 +1,69 @@
+{
+    "HOME": "Home",
+    "VISION": "Our Vision",
+    "SCOPE": "Our Scope",
+    "SERVICESANDSOLUTIONS": "Services & Solutions",
+    "INITIATIVES": "Initiatives",
+    "DOWNLOAD": "Download Center",
+    "BETA":"Beta",
+    "TOPSLIDERH1":"Establishing Sharjah as a global leader in innovation, safety and security",
+    "TOPSLIDERP1":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised.",
+    "TOPSLIDERH2":"1.2m Active Citizen & Resident",
+    "TOPSLIDERH3":"Digital Transformation",
+    "TOPSLIDERH4":"Active Service Directory",
+    "VIDEONOTSUPPORT":"Your browser does not support the video tag",
+    "ACTIVEMUMBER":"1.2m",
+    "CITIZEN":"Active Citizen & Resident",
+    "USAAPP":"Using Sharjah Digital App",
+    
+        "vision": {
+          "title": "OUR VISION",
+          "subtitle": "One Government Initiative lorem Ipsum is simply dummy text of the printing and typesetting industry",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        },
+        "director": {
+          "person1": {
+            "name": "Sht. Saud Al Qasimi",
+            "role": "Director General of Sharjah Digital Department"
+          },
+          "person2": {
+            "name": "Eng. Lamia Al Shamsi",
+            "role": "Director of Sharjah Digital Department"
+          }
+        },
+        "proudToServe": {
+            "title": "Proud to Serve",
+            "number": "190",
+            "subtitle": "Government Departments",
+            "videoSrc": "assets/videos/number-bg.mp4",
+            "videoFallback": "Your browser does not support the video tag."
+          },
+          "scope": {
+            "title": "OUR SCOPE",
+            "heading": "Sustainable Digital Future",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+          },
+          "services": {
+            "title": "SERVICES & SOLUTIONS",
+            "heading": "One Connected Government"
+          },
+          "footer": {
+            "links": {
+              "home": "Home",
+              "vision": "Our Vision",
+              "scope": "Our Scope",
+              "services": "Services & Solutions",
+              "initiatives": "Initiatives",
+              "downloads": "Download Center"
+            },
+            "copyright": "© Copyright Reserved to Sharjah Digital Department © 2024.",
+            "followus":"Follow us"
+          },
+          "button": {
+            "viewMore": "View more"
+          },
+      
+      
+    "LANGUAGE": "العربية"
+}
+  

@@ -1,0 +1,151 @@
+.p-carousel {
+  .p-carousel-content {
+    direction: rtl;
+  }
+  .p-carousel-prev {
+    left: auto;
+    right: 10px;
+  }
+  .p-carousel-next {
+    right: auto;
+    left: 10px;
+  }
+  .p-carousel-indicators {
+    direction: ltr;
+  }
+}
+
+
+.p-carousel-items-container {
+  direction: rtl;
+  flex-direction: row-reverse;
+}
+
+.p-carousel-items-content {
+  padding-left: 10rem;
+  padding-right: 0;
+}
+
+.navbar-brand {
+  span {
+    width: 4.57rem;
+  }
+}
+
+.carousel-caption {
+  left: auto;
+  right: 3rem;
+}
+
+.static-pulsing-popup {
+  right: auto;
+  left: 3rem;
+
+  .text-section {
+    .number-using {
+      padding-right: 3rem;
+      max-width: 13rem;
+    }
+  }
+
+  .circle-inside {
+    right: 0;
+  }
+}
+
+.mobile-flip {
+  .d-flex{
+      span{
+          &::after{
+              left: -1rem;
+              right: auto;
+          }
+      }
+  }
+}
+
+.pulsing-popup {
+  .text-section {
+    .number-using {
+      padding-right: 3rem;
+      max-width: 13rem;
+    }
+  }
+}
+
+.directors {
+  .director-info {
+    .director-text {
+      p {
+        width: 11rem;
+        margin-inline-end: 2rem;
+      }
+    }
+  }
+}
+
+.our-scope {
+  .p-carousel {
+    .card-wrapper {
+      .scope-card {
+        .card-content h3{
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+.our-scope {
+  .p-carousel-content {
+    .p-ripple{
+      left: 3rem;
+    }
+    .p-carousel-prev{
+      left: 3rem;
+      right: auto;
+      margin-inline-end: 0;
+    }
+    .p-carousel-next{
+      margin-inline-end: 2.5rem;
+    }
+  }
+}
+
+.text-video {
+  .text p{
+    letter-spacing: -10px;
+  }
+} 
+
+.circle-inside {
+  left: auto;
+  right: -20px;
+}
+
+.ccSection {
+  .cControls {
+    flex-direction: row-reverse;
+  }
+}
+
+.left-5,
+.left-15 {
+  left: auto;
+}
+
+.left-90 {
+  right: auto;
+}
+
+.left-5 {
+  right: 15%;
+}
+
+.left-15 {
+  right: 30%;
+}
+
+.left-90 {
+  left: 2%;
+}

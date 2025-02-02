@@ -1,0 +1,251 @@
+.carousel-indicators{
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  width: calc(100% - 4rem);
+  [data-bs-target]{
+    width: 25%;
+    height: auto;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-indent: 0;
+    background-color: transparent;
+    padding: 0;
+    border-top: 2px solid #ffffff;
+    padding-top: 1rem;
+    transition: opacity .6s ease;
+    color: $white;
+    text-align: start;
+    font-size: .7rem;
+    p {
+      font-size: 1rem;
+      margin-bottom: .3rem;
+      font-weight: 800;
+    }
+    &.active{
+      border-top-width: 4px;
+    }
+  }
+}
+
+.carousel {
+  position: relative;
+  height: calc(100vh - 4rem);
+  overflow: hidden;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+  @media only screen and (max-width: 992px) {
+    height: calc(100vh - 15rem);
+  }
+}
+
+.carousel-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 10%;
+  left: 3rem;
+  transform: none;
+  color: white;
+  width: 35%;
+  text-align: start;
+  @media only screen and (max-width: 992px) {
+    position: absolute;
+    top: auto;
+    bottom: 2%;
+    left: 2rem;
+    transform: none;
+    color: white;
+    width: 74%;
+    text-align: start;
+  }
+  h1{
+    font-weight: 500;
+  }
+  p{
+    font-weight: 400;
+    font-size: .9rem;
+  }
+}
+
+
+.ccSection {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  @media only screen and (max-width: 992px) {
+    display: none;
+  }
+  .carousel-indicators {
+    position: relative;
+  }
+  .cControls {
+    position: absolute;
+    top: -3.5rem;
+    margin-inline-start: 3rem;
+    display: flex;
+    width: 15rem;
+    justify-content: start;
+    .carousel-control-next, .carousel-control-prev {
+      position: unset;
+      background: rgba(255, 255, 255, 0.2);
+      height: 1.7rem;
+      opacity: 1;
+      font-size: .8rem;
+      &:hover{
+        opacity: 1;
+        background: #fff;
+        span{
+          &:before{
+            color: $dark-gray2;
+          }
+        }
+      }
+      
+    }
+    .carousel-control-prev {
+      border-bottom-left-radius: 100px;
+      border-top-left-radius: 100px;
+    }
+    .carousel-control-next{
+      border-bottom-right-radius: 100px;
+      border-top-right-radius: 100px;
+    }
+  }
+}
+
+.pulsing-circle {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  animation: pulse 2s ease-out infinite;
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+}
+
+
+.left-5 {
+  left: 5%;
+}
+.top-20 {
+  bottom: 220%;
+}
+.left-15 {  
+  left: 20%;
+}
+.top-15 {
+  bottom: 150%;
+}
+.left-90 {
+  right: 2%;
+}
+.top-10 {
+  bottom: 400%;
+}
+.pulsing {
+  position: absolute;
+  z-index: 99;
+  width: 225px;
+  height: 185px;
+  .line{
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255 255 255 / 75%), rgba(0, 0, 0, 0));
+    position: absolute;
+    width: 9rem;
+    transform: rotate(90deg);
+    left: 54.56%;
+    bottom: -22%;
+  }
+}
+.pulsing-popup{
+  position: absolute;
+  background-image: url("../../images/using-bg.png");
+  background-size: cover;
+  width: 225px;
+  height: 185px;
+  color: $white;
+  .text-section {
+    padding: 1rem;
+    h3 {
+      font-size: 4rem;
+      line-height: 4rem;
+      font-weight: 800;
+    }
+    p{
+      font-size: .9rem;
+      font-weight: 400;
+    }
+    .number-using {
+      display: flex;
+      font-size: .7rem;
+      gap: .5rem;
+      max-width: 10rem;
+    }
+  }
+}
+
+.static-pulsing-popup {
+  right: 3rem;
+  bottom: 120%;
+  .circle-inside {
+    bottom: 0;
+    top: auto;
+    right: 0;
+    left: auto;
+    position: absolute;
+  }
+}
+
+.circle-inside {
+  width: 3rem;
+  height: 3rem;
+  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  top: -12px;
+  left: -15px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); 
+    background-color: #fff; 
+    box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.7); 
+  }
+  10% {
+    background-color: green;
+  }
+  50% {
+    transform: scale(1);
+    box-shadow: 0 0 0 15px rgba(0, 255, 0, 0); 
+  }
+  100% {
+    transform: scale(1);
+    background-color: #fff; 
+    box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.7);
+  }
+}
