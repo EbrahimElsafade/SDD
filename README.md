@@ -1,27 +1,74 @@
-# SddLandingPage
+# Sharjah Digital Department Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+This repository contains the source code for the Sharjah Digital Department's web project. Built with **Angular 18**, the project utilizes **PrimeNG**, **Bootstrap**, **SASS**, **IcoMoon**, and **ngx-translate** for seamless UI/UX design and multilingual support.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Angular 18**: A powerful framework for building scalable and high-performance web applications.
+- **PrimeNG**: A rich set of UI components for modern web applications.
+- **Bootstrap**: Provides responsive, mobile-first design.
+- **SASS**: Advanced styling with variables, mixins, and reusable styles.
+- **IcoMoon**: Custom icons for a unique look and feel.
+- **ngx-translate**: Easy implementation of multilingual support.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Installation and Setup
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Follow these steps to clone and run the project locally:
 
-## Running unit tests
+### 1. Clone the Repository
+```bash
+git clone https://github.com/EbrahimElsafade/SDD.git
+cd your-repo
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 2. Install Dependencies
+Ensure you have **Node.js** (version 16 or higher) and **Angular CLI** installed on your machine. Then, run:
 
-## Running end-to-end tests
+```bash
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 3. Serve the Application
+Run the following command to start the development server:
+```bash
+ng serve
+```
 
-## Further help
+The application will be available at:  
+[http://localhost:4200](http://localhost:4200)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## Project Structure
+
+- **src/app**: Contains Angular components, services, and modules.
+- **src/assets**: Includes static files like images, icons, and fonts.
+- **src/styles**: SASS stylesheets for global and component-specific styling.
+- **src/i18n**: JSON files for multilingual translations (handled by `ngx-translate`).
+
+---
+
+## Dependencies
+
+- **Angular 18**
+- **PrimeNG**
+- **Bootstrap**
+- **SASS**
+- **IcoMoon**
+- **ngx-translate**
+
+---
+
+## Contribution
+
+If you'd like to contribute to this project, please fork the repository and create a pull request with your changes.
+
+---
+
+## License
+
+This project is owned by the **Sharjah Digital Department**. All rights reserved.
