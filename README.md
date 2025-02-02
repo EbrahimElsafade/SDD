@@ -61,14 +61,4 @@ The application will be available at:
 - **IcoMoon**
 - **ngx-translate**
 
----
 
-## Contribution
-
-If you'd like to contribute to this project, please fork the repository and create a pull request with your changes.
-
----
-
-## License
-
-This project is owned by the **Sharjah Digital Department**. All rights reserved.
