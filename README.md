@@ -1,4 +1,4 @@
-# Sharjah Digital Department Project
+<!-- # Sharjah Digital Department Project
 
 This repository contains the source code for the Sharjah Digital Department's web project. Built with **Angular 18**, the project utilizes **PrimeNG**, **Bootstrap**, **SASS**, **IcoMoon**, and **ngx-translate** for seamless UI/UX design and multilingual support.
 
@@ -61,4 +61,4 @@ The application will be available at:
 - **IcoMoon**
 - **ngx-translate**
 
-
+ -->
